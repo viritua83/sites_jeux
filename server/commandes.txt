@@ -1,3 +1,0 @@
-npm init -y
-npm install http
-npm install express passport passport-local express-session

@@ -1,0 +1,50 @@
+#################################################################################################
+Créer un projet Django
+Ouvrez une console et créez un nouveau projet Django avec la commande :
+$django-admin startproject monprojet
+
+Naviguez dans le répertoire du projet avec cd monprojet.
+Créez une application Django avec la commande :
+$python3 manage.py startapp monapp
+
+#################################################################################################
+Configuration de la base de données
+
+Configurez votre base de données dans monprojet/settings.py. Par défaut, Django utilise SQLite, mais vous pouvez choisir d'autres bases de données.
+Exécutez les migrations initiales pour créer les tables de base de données :
+$python3 manage.py migrate
+
+#################################################################################################
+Création de modèles
+
+Définissez les modèles dans le fichier monapp/models.py.
+
+Créez des migrations pour vos modèles :
+$python3 manage.py makemigrations
+
+Appliquez les migrations avec :
+$python3 manage.py migrate
+
+
+#################################################################################################
+Création de vues (En Django, une vue est une fonction Python qui prend une requête web spécifique et renvoie une réponse HTTP. En d'autres termes, elle définit la logique derrière une page web particulière de votre application.)
+
+Créez des vues dans monapp/views.py.
+Configurez les URLs dans monapp/urls.py pour mapper les vues.
+
+#################################################################################################
+Création de templates
+
+Créez un répertoire templates dans le répertoire de votre application.
+Utilisez des templates HTML pour rendre les pages.
+
+#################################################################################################
+Gestion des URLS
+
+Configurez les URLS dans monprojet/urls.py pour inclure les URLS de votre application.
+Utilisez la fonction include pour lier les URLS de votre application.
+
+#################################################################################################
+Lancement
+$python3 manage.py runserver
+
